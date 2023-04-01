@@ -12,75 +12,103 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/death-star.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top" />
-          Birodalmi Akadémia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/death-star.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top" />
+        Birodalmi Akadémia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about-us">Akadémia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="carrier">Karrier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
+              target="”_blank”">HoloNet</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Munkát keresel?" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Csatlakozás
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col" id="tape">
+        <h1>Szereted a hazádat? </h1>
+        <div>Állj be a Galaktikus Birodalomhoz!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion" id="accordionPanelsStayOpenExample" style="display: inline-block; justify-content: center; align-items: center; padding: 3dvh 5dvw;">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <h2>Nincs jobb az Akadémiai képzésnél</h2>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about-us">Akadémia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="carrier">Karrier</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
-                target="”_blank”">HoloNet</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Munkát keresel?" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
-              Bejelentkezés
-            </button>
-            <button class="btn btn-outline-success" type="submit">
-              Csatlakozás
-            </button>
-            <div class="dropdown">
-              <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false" title="Fordítás">
-                <img src="img/personal-droid.png" alt="jedi" width="25" height="25" />
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Galaktikus közös</a></li>
-                <li><a class="dropdown-item" href="#">Wookie</a></li>
-                <li><a class="dropdown-item" href="#">Chiss</a></li>
-              </ul>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body" style="display: flex; justify-content: center; align-items: center;">
+          <div class="card" style="width: 80dvw;">
+            <div class="card-body" >
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-5 col-sm-12" style="display: flex; justify-content: center; align-items: center;" id="joinPictureCol">
+                    <img src="img/336377517_162991123277450_3462041039879870260_n.jpg" class="img-fluid rounded-start"
+                      alt="join" style="height: 30dvh;" id="join">
+                  </div>
+                  <div class="col-md-7 col-sm-12 gy-5">
+                    <h3><strong>Tartozz a legjobbakhoz!</strong></h3>
+                    <a href="carrier.html">Jelentkezz még ma!</a>
+                    <p>A birodalmi hadigépezet növekedése következtében a regionális katonai kiképzőintézmények nagy
+                      átalakuláson
+                      mentek keresztül. A Köztársaság idejében nem létezett egységes haderő, amely megvédelmezhette
+                      volna a
+                      Galaxist!</p>
+                    <p>A Birodalom fegyveres erőit önkéntes polgárok alkotják a klónkatonák helyett. A zászlók,
+                      hagyományok,
+                      jelképek helyére a rohamosztagosok uniformitása kerül.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="btn btn-outline-success" type="submit" title="Világos oldal">
-              <img src="img/jedi-order.png" alt="jedi" width="25" height="25" />
-            </button>
-          </form>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <main>
-
-    
-
-
-  </main>
-
+    </div>
+  </div>
 
   <footer>
     <div class="container-fluid fixed-bottom">
-      <div class="col">
-        <div class="row" style="background-color: grey;">
+      <div class="row" style="background-color: grey">
+        <div class="col">
           <h3>Támogasd a Birodalmat!</h3>
-          <div>Építs hajókat, termelj kybert a birodalmi haditengerészet igényeinek kiszolgálása érdekében </div>
-          <div><img src="img/icons8-empire-32.png" alt="empireLogo">Birodalmi Információs Minisztérium</div>
+          <div>
+            Építs hajókat, termelj kybert a birodalmi haditengerészet
+            igényeinek kiszolgálása érdekében
+          </div>
+          <div>
+            <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
+            Információs Minisztérium
+          </div>
           <div>© 3 BBY Galaktikus Birodalom</div>
         </div>
       </div>
