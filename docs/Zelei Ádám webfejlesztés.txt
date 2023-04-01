@@ -3,6 +3,8 @@ Zelei Ádám webfejlesztés
 google fiók: q9yhla@gmail.com
 pw: Zaq9yhla_
 
+github: dankoattila92@gmail.com
+Darthrevan1_
 
 Form adatok kitöltése
 adatok küldése Google Sheets-be
