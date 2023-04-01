@@ -1,0 +1,24 @@
+Zelei Ádám webfejlesztés
+
+google fiók: q9yhla@gmail.com
+pw: Zaq9yhla_
+
+
+Form adatok kitöltése
+adatok küldése Google Sheets-be
+https://dev.to/kromate/connecting-your-html-forms-to-a-google-spreadsheet-p9h
+
+Komponensek
+https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
+
+IAwebApp
+A környezet frissítése sikeresen megtörtént.
+Verzió: 1, dátum: márc. 17., időpont: 22:33
+
+Bevezetési azonosító
+AKfycbyIT2mBy6VOEIAo8koSnkXGp0SSXmWG6BHTbnUOnY9i4aCJFuotzIuD_9Jz8Eg3ZaO0Yg
+
+Internetes alkalmazás
+URL-cím
+https://script.google.com/macros/s/AKfycbyIT2mBy6VOEIAo8koSnkXGp0SSXmWG6BHTbnUOnY9i4aCJFuotzIuD_9Jz8Eg3ZaO0Yg/exec
+
