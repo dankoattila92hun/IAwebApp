@@ -1,4 +1,4 @@
-// Kereső mező és kereső gomb constructor deklarálása
+// Kereső mező és kereső gomb const típusú változók deklarálása
 const searchInput = document.querySelector('.form-control');
 const searchBtn = document.querySelector('.search-btn');
 

@@ -24,3 +24,5 @@ Internetes alkalmazás
 URL-cím
 https://script.google.com/macros/s/AKfycbyIT2mBy6VOEIAo8koSnkXGp0SSXmWG6BHTbnUOnY9i4aCJFuotzIuD_9Jz8Eg3ZaO0Yg/exec
 
+Google Search engine
+https://programmablesearchengine.google.com/u/1/controlpanel/overview?cx=438ab7c17e1ef4d06
