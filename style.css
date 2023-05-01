@@ -59,3 +59,10 @@ body {
 #tape {
     margin: 2dvh 4.5dvw 0 4.5dvw;
 }
+
+.form-title,
+.form-paragraph {
+    margin: 1em auto;
+    text-align: center;
+}
+
