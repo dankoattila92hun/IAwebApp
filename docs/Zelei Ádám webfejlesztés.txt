@@ -6,23 +6,20 @@ pw: Zaq9yhla_
 github: dankoattila92@gmail.com
 Darthrevan1_
 
-Form adatok kitöltése
-adatok küldése Google Sheets-be
+FORM connect to Google Táblázatok and send data
+Forrás:
 https://dev.to/kromate/connecting-your-html-forms-to-a-google-spreadsheet-p9h
+
+Bevezetési azonosító:
+AKfycbz0h6uEbzjNzpYh0eBJ-GuzHbi6j9Kzl-7KMgS_aGbyRzse6wHxeF4n7bDDVobDVyf0
+
+URL:
+https://script.google.com/macros/s/AKfycbz0h6uEbzjNzpYh0eBJ-GuzHbi6j9Kzl-7KMgS_aGbyRzse6wHxeF4n7bDDVobDVyf0/exec
+
 
 Komponensek
 https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 
-IAwebApp
-A környezet frissítése sikeresen megtörtént.
-Verzió: 1, dátum: márc. 17., időpont: 22:33
-
-Bevezetési azonosító
-AKfycbyIT2mBy6VOEIAo8koSnkXGp0SSXmWG6BHTbnUOnY9i4aCJFuotzIuD_9Jz8Eg3ZaO0Yg
-
-Internetes alkalmazás
-URL-cím
-https://script.google.com/macros/s/AKfycbyIT2mBy6VOEIAo8koSnkXGp0SSXmWG6BHTbnUOnY9i4aCJFuotzIuD_9Jz8Eg3ZaO0Yg/exec
 
 Google Search engine
 https://programmablesearchengine.google.com/u/1/controlpanel/overview?cx=438ab7c17e1ef4d06

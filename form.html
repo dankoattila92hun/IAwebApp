@@ -64,23 +64,23 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
 
-                <form action="https://sheetdb.io/api/v1/iq76zlxo3xc70" method="post" id="survey-form">
+                <form method="post" id="survey-form">
 
                     <div class="mb-4">
                         <label for="name" id="name-label" class="form-label">Név</label>
-                        <input type="text" id="name" name="data[name]" class="form-control"
-                            placeholder="Adja meg a nevét" required>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Adja meg a nevét"
+                            required>
                     </div>
 
                     <div class="mb-4">
                         <label for="email" id="email-label" class="form-label">Email</label>
-                        <input type="email" id="email" name="data[email]" class="form-control"
+                        <input type="email" id="email" name="email" class="form-control"
                             placeholder="Adja meg az e-mail címét" required>
                     </div>
 
                     <div class="mb-4 form-group">
                         <label id="number-label" for="number">Kor <span class="clue">(nem kötelező)</span></label>
-                        <input type="number" name="data[age]" id="number" min="18" max="900" class="form-control"
+                        <input type="number" name="age" id="number" min="18" max="900" class="form-control"
                             placeholder="Kor" />
                     </div>
 
@@ -88,24 +88,24 @@
                         <label class="form-check-label">Neme</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="recommendation1" name="data[recommendation]"
-                            value="Definitely" checked>
+                        <input class="form-check-input" type="radio" id="recommendation1" name="recommendation"
+                            value="Male" checked>
                         <label class="form-check-label" for="recommendation1">Férfi</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="data[recommendation]" id="recommendation2"
-                            value="Maybe">
+                        <input class="form-check-input" type="radio" name="recommendation" id="recommendation2"
+                            value="Female">
                         <label class="form-check-label" for="recommendation2">Nő</label>
                     </div>
                     <div class="form-check mb-4">
-                        <input class="form-check-input" type="radio" name="data[recommendation]" id="recommendation3"
-                            value="Not sure">
+                        <input class="form-check-input" type="radio" name="recommendation" id="recommendation3"
+                            value="Other (humaniod)">
                         <label class="form-check-label" for="recommendation3">Egyéb (humanoid)</label>
                     </div>
 
                     <div class="mb-4">
                         <label for="school">Legmagasabb iskolai végzettsége</label>
-                        <select class="form-select" id="school" name="data[school]">
+                        <select class="form-select" id="school" name="school">
                             <option value="default">Kérjük válasszon egyet</option>
                             <option value="basic">Alapfokú</option>
                             <option value="intermediate">Középfokú</option>
@@ -115,7 +115,7 @@
 
                     <div class="mb-4">
                         <label>Milyen szakterületre szeretne jelentkezni?</label>
-                        <select class="form-select" id="dropdown" name="data[study-field]">
+                        <select class="form-select" id="dropdown" name="study-field">
                             <option value="default" selected>Kérjük válasszon egyet</option>
                             <option value="medical">Egészségügy</option>
                             <option value="soldier">Katona</option>
@@ -133,44 +133,43 @@
                         <div id="improveBlock" class="form-text"> (Több válasz megadása is lehetséges)<label
                                 class="form-label">Mivel szeretne foglalkozni?</label></div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve1" name="data[improveCheck]" value="Front-end Projects">
+                            <input type="checkbox" id="improve1" name="improveCheck" value="Searching for Rebel Scum">
                             <label for="improve1">Lázadók felkutatása</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve2" name="data[improveCheck]" value="Back-end Projects">
+                            <input type="checkbox" id="improve2" name="improveCheck" value="Working on a Stardestroyer">
                             <label for="improve2">Csillagrombolón szolgálat teljesítése</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve3" name="data[improveCheck]" value="Data Visualization">
+                            <input type="checkbox" id="improve3" name="improveCheck" value="Flying in TIE">
                             <label for="improve3">Vadászgépek kezelése</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve4" name="data[improveCheck]" value="Challenges">
+                            <input type="checkbox" id="improve4" name="improveCheck" value="Medical tasks">
                             <label for="improve4">Felcser feladatok ellátása</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve5" name="data[improveCheck]"
-                                value="Open Source Community">
+                            <input type="checkbox" id="improve5" name="improveCheck" value="Maintenance">
                             <label for="improve5">Üzemeltetés, karbantartás</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve6" name="data[improveCheck]" value="Gitter help rooms">
+                            <input type="checkbox" id="improve6" name="improveCheck" value="Services for the citizens of the Empire">
                             <label for="improve6">Szolgáltatások biztosítása a Birodalom polgárai számára</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve7" name="data[improveCheck]" value="Videos">
+                            <input type="checkbox" id="improve7" name="improveCheck" value="Cloning">
                             <label for="improve7">Klónozási technológiák kutatása</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve8" name="data[improveCheck]" value="City Meetups">
+                            <input type="checkbox" id="improve8" name="improveCheck" value="Policing">
                             <label for="improve8">Rendfenntartás</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve9" name="data[improveCheck]" value="Wiki">
+                            <input type="checkbox" id="improve9" name="improveCheck" value="Coordination">
                             <label for="improve9">Rohamosztagok koordinálása</label>
                         </div>
                         <div class="form-check p-0">
-                            <input type="checkbox" id="improve10" name="data[improveCheck]" value="Forum">
+                            <input type="checkbox" id="improve10" name="improveCheck" value="Logistics">
                             <label for="improve10">Ellátási lánc biztosítása</label>
                         </div>
                     </div>
@@ -178,7 +177,7 @@
                     <div class="mb-4">
                         <label for="comment">Kérjük, ossza meg velünk észrevételeit, motivációját!</label>
                         <div class="form-floating">
-                            <textarea class="form-control" id="comment" name="data[comment]"
+                            <textarea class="form-control" id="comment" name="comment"
                                 placeholder="Lövészet fejlesztése..."></textarea>
                         </div>
                     </div>
