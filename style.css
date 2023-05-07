@@ -37,6 +37,19 @@ body {
     font-size: 2dvh;
 }
 
+#carousel {
+    max-height: 55dvh;
+    justify-content: center;
+    align-items: center;
+    padding: 3dvh 5dvw;
+}
+
+#carousel,
+.carouselImg {
+    min-height: 35dvh;
+    max-height: 35dvh;
+}
+
 @media (max-width: 768px) {
     #carouselImg {
         max-height: 25vh;
@@ -45,6 +58,16 @@ body {
     #carousel {
         max-height: 25vh;
     }
+}
+
+.accordion {
+    justify-content: center;
+    align-items: center;
+    padding: 3dvh 5dvw;
+}
+
+.accordion-body {
+    display: flex;
 }
 
 .accordion-button:focus {
@@ -56,8 +79,22 @@ body {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
+.card {
+    width: 80dvw;
+}
+
 #tape {
     margin: 2dvh 4.5dvw 0 4.5dvw;
+}
+
+.joinPictureCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join {
+    height: 30dvh
 }
 
 #title {
@@ -190,6 +227,10 @@ form {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
+.form-text {
+    display:inline;
+}
+
 .input-radio,
 .input-checkbox {
     display: inline-block;
@@ -213,4 +254,8 @@ form {
     color: #e4e4e4;
     border-radius: 2px;
     cursor: pointer;
+}
+
+#comment {
+    height: 10rem;
 }
