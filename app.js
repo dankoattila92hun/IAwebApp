@@ -1,6 +1,6 @@
 const form = document.querySelector("#survey-form")
 const submitButton = document.querySelector("#submit")
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz0h6uEbzjNzpYh0eBJ-GuzHbi6j9Kzl-7KMgS_aGbyRzse6wHxeF4n7bDDVobDVyf0/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwYUO2rF_IQxtup2bqLmll36I-u_pmuSiSTQgCBUIHA_CMYzQgZY5w2g10JUigiD_KqGg/exec'
 
 form.addEventListener('submit', e => {
     submitButton.disabled = true
