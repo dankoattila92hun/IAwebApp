@@ -8,77 +8,166 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Birodalmi Akadémia</title>
+  <link rel="stylesheet" href="print.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <title>Birodalmi Akadémia - Rólunk</title>
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid">
+        <a href="#main" class="ugras_a_tartalomhoz">Ugrás a tartalomhoz</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/death-star.png" alt="Halálcsillag logó." width="35" height="35"
+            class="d-inline-block align-text-center" />
+          Birodalmi Akadémia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about-us.html">Akadémia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="carrier.html">Karrier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
+                target="”_blank”">HoloNet</a>
+            </li>
+          </ul>
 
-  <nav class="navbar navbar-expand-sm sticky-top" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/death-star.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-center" />
-        Birodalmi Akadémia</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="about-us.html">Akadémia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="carrier.html">Karrier</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
-              target="”_blank”">HoloNet</a>
-          </li>
-        </ul>
+          <div class="gcse-search"></div>
+          <button onclick="location.href='form.html'" class="btn btn-dark joinBtn" type="button">Csatlakozás</button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <div class="gcse-search"></div>
-        <button onclick="location.href='form.html'" class="btn btn-dark" type="button">Csatlakozás</button>
+  <main>
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-inline-block py-2" id="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/336382133_6006897719365606_1689744260876239166_n.jpg" class="d-block w-100 carouselImg"
+                  alt="TIE vadász gyártó üzem promóció. A Lothali vadászgép gyártó üzemet hivatott népszerűsíteni." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/Enlist_Today.jpg" class="d-block w-100 carouselImg"
+                  alt="Toborzási plakát rajta Darth Vaderrel, 'Egyedül nem képes rá.' felirattal." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/RebelsAreTerrorists.webp" class="d-block w-100 carouselImg"
+                  alt="Egy erős propaganda üzenet. A 'Lázadók terroristák!' felirattal." />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <div class="carrier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati libero repellendus
-    consequuntur labore distinctio. Magnam unde at iure quod ad. Saepe error repellat expedita commodi ipsam quod quia
-    culpa minima?</div>
-  <div class="carrier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati libero repellendus
-    consequuntur labore distinctio. Magnam unde at iure quod ad. Saepe error repellat expedita commodi ipsam quod quia
-    culpa minima?</div>
-  <div class="carrier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati libero repellendus
-    consequuntur labore distinctio. Magnam unde at iure quod ad. Saepe error repellat expedita commodi ipsam quod quia
-    culpa minima?</div>
-  <div class="carrier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati libero repellendus
-    consequuntur labore distinctio. Magnam unde at iure quod ad. Saepe error repellat expedita commodi ipsam quod quia
-    culpa minima?</div>
+    <div class="containar-sm py-3">
+      <div class="row">
 
-
-  <div class="container-fluid sticky-bottom">
-    <div class="row" id="footer">
-      <div class="col">
-        <h3 class="content">Támogasd a Birodalmat!</h3>
-        <div class="content">
-          Építs hajókat, termelj kybert a birodalmi haditengerészet igényeinek
-          kiszolgálása érdekében
+        <div class="col-lg-8 col-sm-6 mb-3 mb-sm-0">
+          <section>
+            <article>
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="aboutTitle">
+                    Ezer év béke
+                  </h1>
+                  <div class="about">Miután <a href="https://starwars.fandom.com/wiki/Palpatine/Legends">Palpatine
+                      császár</a> kinyilatkoztatta az első Galaktikus Birodalomat a korábbi nabooi
+                    szenátor legyőzte az áruló jediket és véget vetett a szeparatista fenyegetésnek. Egyesítette a
+                    galaxist!
+                    A
+                    politikai apparátus átalakítása a Birodalmi Szenátus hatáskörébe került.
+                  </div>
+                  <aside>
+                    <h4>Palpatine
+                      császár</h4>
+                    <p><strong>Palpatine</strong>, akit Sith nevén Darth Sidiousként vagy egyszerűen csak Császárként is
+                      ismertek, egy
+                      Erő-érzékeny emberi férfi volt, aki a Galaktikus Köztársaság utolsó legfőbb kancellárjaként
+                      szolgált, a pozíciót BBY 32-től BBY 19-ig töltötte be, és a Galaktikus Birodalom első császára
+                      volt
+                      BBY 19-től ABY 4-ben bekövetkezett haláláig.</p>
+                  </aside>
+                </div>
+              </div>
+            </article>
+          </section>
         </div>
-        <div class="content">
-          <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
-          Információs Minisztérium
+
+        <div class="col-lg-4 col-sm-6 mb-3 mb-sm-0">
+
+          <div class="card">
+            <div class="card-body">
+              <figure>
+                <img src="img/333084171_1386701868756493_5271483493802632911_n.jpg" class="aboutPic"
+                  alt="Birodalmi Csillagrombóló - Erőben a biztonság, engedelmességben a rend felirattal.">
+                <figcaption>A Chimaera csillagromboló</figcaption>
+              </figure>
+            </div>
+          </div>
+
         </div>
-        <div class="content">© 3 BBY Galaktikus Birodalom</div>
+
       </div>
     </div>
-  </div>
+
+  </main>
+
+  <footer>
+    <div class="container-fluid sticky-bottom">
+      <div class="row" id="footer">
+        <div class="col">
+          <h3 class="content">Támogasd a Birodalmat!</h3>
+          <div class="content">
+            Építs hajókat, termelj kybert a birodalmi haditengerészet igényeinek
+            kiszolgálása érdekében
+          </div>
+          <div class="content">
+            <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
+            Információs Minisztérium
+          </div>
+          <div class="content">© 3 BBY Galaktikus Birodalom</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

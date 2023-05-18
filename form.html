@@ -8,219 +8,241 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Birodalmi Akadémia</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Birodalmi Akadémia - Jelentkezési űrlap</title>
 </head>
 
-<body class="form-body">
+<body>
 
-    <nav class="navbar navbar-expand-sm sticky-top" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/death-star.png" alt="Logo" width="35" height="35"
-                    class="d-inline-block align-text-center" />
-                Birodalmi Akadémia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about-us.html">Akadémia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="carrier.html">Karrier</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
-                            target="”_blank”">HoloNet</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+            <div class="container-fluid">
+                <a href="#main" class="ugras_a_tartalomhoz">Ugrás a tartalomhoz</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/death-star.png" alt="Halálcsillag logó." width="35" height="35"
+                        class="d-inline-block align-text-center" />
+                    Birodalmi Akadémia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about-us.html">Akadémia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="carrier.html">Karrier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
+                                target="”_blank”">HoloNet</a>
+                        </li>
+                    </ul>
 
-                <div class="gcse-search"></div>
-                <button onclick="location.href='form.html'" class="btn btn-dark" type="button">Csatlakozás</button>
+                    <div class="gcse-search"></div>
+                    <button onclick="location.href='form.html'" class="btn btn-dark joinBtn"
+                        type="button">Csatlakozás</button>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="container" id="form-container">
-        <header class="header text-center">
-            <h1 id="title">
-                Csatlakozz a Birodalom seregéhez!
-            </h1>
-            <p class="fst-italic" id="description">
-                Biztonságot hozó erő, rendet hozó engedelmesség
-            </p>
-        </header>
+    <div class="form-body">
+        <div class="container" id="form-container">
+            <header class="header text-center">
+                <h1 id="title">
+                    Csatlakozz a Birodalom seregéhez!
+                </h1>
+                <p class="fst-italic" id="description">
+                    Biztonságot hozó erő, rendet hozó engedelmesség
+                </p>
+            </header>
 
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-center">
 
-                <form id="survey-form">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
 
-                    <div class="mb-4">
-                        <label for="name" id="name-label" class="form-label">Név</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Adja meg a nevét"
-                            required>
-                    </div>
+                    <form id="survey-form">
 
-                    <div class="mb-4">
-                        <label for="email" id="email-label" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-control"
-                            placeholder="Adja meg az e-mail címét" required>
-                    </div>
-
-                    <div class="mb-4 form-group">
-                        <label id="number-label" for="number">Kor <span class="clue">(nem kötelező)</span></label>
-                        <input type="number" name="age" id="number" min="18" max="900" class="form-control"
-                            placeholder="Kor" />
-                    </div>
-
-                    <div class="form-check-label">
-                        <label class="form-check-label">Neme</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="recommendation1" name="recommendation"
-                            value="Male" checked>
-                        <label class="form-check-label" for="recommendation1">Férfi</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="recommendation" id="recommendation2"
-                            value="Female">
-                        <label class="form-check-label" for="recommendation2">Nő</label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="radio" name="recommendation" id="recommendation3"
-                            value="Other (humaniod)">
-                        <label class="form-check-label" for="recommendation3">Egyéb (humanoid)</label>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="school">Legmagasabb iskolai végzettsége</label>
-                        <select class="form-select" id="school" name="school">
-                            <option value="default">Kérjük válasszon egyet</option>
-                            <option value="basic">Alapfokú</option>
-                            <option value="intermediate">Középfokú</option>
-                            <option value="upper">Felsőfokú</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-4">
-                        <label>Milyen szakterületre szeretne jelentkezni?</label>
-                        <select class="form-select" id="dropdown" name="study-field">
-                            <option value="default" selected>Kérjük válasszon egyet</option>
-                            <option value="medical">Egészségügy</option>
-                            <option value="soldier">Katona</option>
-                            <option value="search-and-development">Kutatás-fejlesztés</option>
-                            <option value="engineering">Műszaki</option>
-                            <option value="pilot">Pilóta</option>
-                            <option value="services">Szolgáltazó</option>
-                            <option value="technician">Technikus</option>
-                            <option value="leadership">Tiszt</option>
-                            <option value="business">Üzleti és pénzügyi</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-4">
-                        <div id="improveBlock" class="form-text"> (Több válasz megadása is lehetséges)<label
-                                class="form-label">Mivel szeretne foglalkozni?</label></div>
-
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve1" name="improveCheck" value="Searching for Rebel Scum">
-                            <label for="improve1">Lázadók felkutatása</label>
+                        <div class="mb-4">
+                            <label for="name" id="name-label" class="form-label">Név</label>
+                            <input type="text" id="name" name="name" class="form-control" maxlength="64" placeholder="Adja meg a nevét"
+                                required>
                         </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve2" name="improveCheck" value="Working on a Stardestroyer">
-                            <label for="improve2">Csillagrombolón szolgálat teljesítése</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve3" name="improveCheck" value="Flying in TIE">
-                            <label for="improve3">Vadászgépek kezelése</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve4" name="improveCheck" value="Medical tasks">
-                            <label for="improve4">Felcser feladatok ellátása</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve5" name="improveCheck" value="Maintenance">
-                            <label for="improve5">Üzemeltetés, karbantartás</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve6" name="improveCheck" value="Services for the citizens of the Empire">
-                            <label for="improve6">Szolgáltatások biztosítása a Birodalom polgárai számára</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve7" name="improveCheck" value="Cloning">
-                            <label for="improve7">Klónozási technológiák kutatása</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve8" name="improveCheck" value="Policing">
-                            <label for="improve8">Rendfenntartás</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve9" name="improveCheck" value="Coordination">
-                            <label for="improve9">Rohamosztagok koordinálása</label>
-                        </div>
-                        <div class="form-check p-0">
-                            <input type="checkbox" id="improve10" name="improveCheck" value="Logistics">
-                            <label for="improve10">Ellátási lánc biztosítása</label>
-                        </div>
-                    </div>
 
-                    <div class="mb-4">
-                        <label for="comment">Kérjük, ossza meg velünk észrevételeit, motivációját!</label>
-                        <div class="form-floating">
-                            <textarea class="form-control" id="comment" name="comment"
-                                placeholder="Lövészet fejlesztése..."></textarea>
+                        <div class="mb-4">
+                            <label for="email" id="email-label" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" maxlength="64" class="form-control"
+                                placeholder="Adja meg az e-mail címét" required>
                         </div>
-                    </div>
 
-                    <div class="mb-4">
-                        <label for="terms-and-conditions" class="form-label"><input id="terms-and-conditions"
-                                type="checkbox" required name="terms-and-conditions" class="inline" />
-                            Elfogadom a <a href="https://en.wikipedia.org/wiki/Terms_of_service">jelentkezési
-                                feltételeket!</a></label>
-                    </div>
+                        <div class="mb-4 form-group">
+                            <label id="number-label" for="number">Kor <span class="clue">(nem kötelező)</span></label>
+                            <input type="number" name="age" id="number" min="18" max="900" class="form-control"
+                                placeholder="Kor" />
+                        </div>
 
-                    <div class="mb-3">
-                        <button type="submit" id="submit" class="submit-button">Submit</button>
-                    </div>
+                        <div class="form-check-label">
+                            <label class="form-check-label">Neme</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="recommendation1" name="recommendation"
+                                value="Male" checked>
+                            <label class="form-check-label" for="recommendation1">Férfi</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recommendation" id="recommendation2"
+                                value="Female">
+                            <label class="form-check-label" for="recommendation2">Nő</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" name="recommendation" id="recommendation3"
+                                value="Other (humaniod)">
+                            <label class="form-check-label" for="recommendation3">Egyéb (humanoid)</label>
+                        </div>
 
-                </form>
+                        <div class="mb-4">
+                            <label for="school">Legmagasabb iskolai végzettsége</label>
+                            <select class="form-select" id="school" name="school">
+                                <option value="default">Kérjük válasszon egyet</option>
+                                <option value="basic">Alapfokú</option>
+                                <option value="intermediate">Középfokú</option>
+                                <option value="upper">Felsőfokú</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label>Milyen szakterületre szeretne jelentkezni?</label>
+                            <select class="form-select" id="dropdown" name="study-field">
+                                <option value="default" selected>Kérjük válasszon egyet</option>
+                                <option value="medical">Egészségügy</option>
+                                <option value="soldier">Katona</option>
+                                <option value="search-and-development">Kutatás-fejlesztés</option>
+                                <option value="engineering">Műszaki</option>
+                                <option value="pilot">Pilóta</option>
+                                <option value="services">Szolgáltazó</option>
+                                <option value="technician">Technikus</option>
+                                <option value="leadership">Tiszt</option>
+                                <option value="business">Üzleti és pénzügyi</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <div id="improveBlock" class="form-text"><label class="form-label">Mivel szeretne
+                                    foglalkozni?</label> (Több válasz megadása is lehetséges)</div>
+
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve1" name="improveCheck"
+                                    value="Searching for Rebel Scum">
+                                <label for="improve1">Lázadók felkutatása</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve2" name="improveCheck"
+                                    value="Working on a Stardestroyer">
+                                <label for="improve2">Csillagrombolón szolgálat teljesítése</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve3" name="improveCheck" value="Flying in TIE">
+                                <label for="improve3">Vadászgépek kezelése</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve4" name="improveCheck" value="Medical tasks">
+                                <label for="improve4">Felcser feladatok ellátása</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve5" name="improveCheck" value="Maintenance">
+                                <label for="improve5">Üzemeltetés, karbantartás</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve6" name="improveCheck"
+                                    value="Services for the citizens of the Empire">
+                                <label for="improve6">Szolgáltatások biztosítása a Birodalom polgárai számára</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve7" name="improveCheck" value="Cloning">
+                                <label for="improve7">Klónozási technológiák kutatása</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve8" name="improveCheck" value="Policing">
+                                <label for="improve8">Rendfenntartás</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve9" name="improveCheck" value="Coordination">
+                                <label for="improve9">Rohamosztagok koordinálása</label>
+                            </div>
+                            <div class="form-check p-0">
+                                <input type="checkbox" id="improve10" name="improveCheck" value="Logistics">
+                                <label for="improve10">Ellátási lánc biztosítása</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="comment">Kérjük, ossza meg velünk észrevételeit, motivációját!</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" id="comment" name="comment" maxlength="256"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="terms-and-conditions" class="form-label"><input id="terms-and-conditions"
+                                    type="checkbox" required name="terms-and-conditions" class="inline" />
+                                Elfogadom a <a href="https://en.wikipedia.org/wiki/Terms_of_service" class="termsLink" target="”_blank”">jelentkezési
+                                    feltételeket!</a></label>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" id="submit" class="btn btn-outline-light submit-button">Jelentkezés
+                                küldése</button>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="reset" id="reset" onclick="resetFunction()"
+                                class="btn btn-outline-danger reset-button">Űrlap visszaállítása</button>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid sticky-bottom">
-        <div class="row" id="footer">
-            <div class="col">
-                <h3 class="content">Támogasd a Birodalmat!</h3>
-                <div class="content">
-                    Építs hajókat, termelj kybert a birodalmi haditengerészet igényeinek
-                    kiszolgálása érdekében
+
+
+    <footer>
+        <div class="container-fluid sticky-bottom">
+            <div class="row" id="footer">
+                <div class="col">
+                    <h3 class="content">Támogasd a Birodalmat!</h3>
+                    <div class="content">
+                        Építs hajókat, termelj kybert a birodalmi haditengerészet igényeinek
+                        kiszolgálása érdekében
+                    </div>
+                    <div class="content">
+                        <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
+                        Információs Minisztérium
+                    </div>
+                    <div class="content">© 3 BBY Galaktikus Birodalom</div>
                 </div>
-                <div class="content">
-                    <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
-                    Információs Minisztérium
-                </div>
-                <div class="content">© 3 BBY Galaktikus Birodalom</div>
             </div>
         </div>
-    </div>
+    </footer>
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script async src="https://cse.google.com/cse.js?cx=438ab7c17e1ef4d06"></script>
+
 
 </body>
 

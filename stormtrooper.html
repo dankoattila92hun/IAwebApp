@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Birodalmi Akadémia - Állásajánlat (Rohamosztagos)</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+            <div class="container-fluid">
+                <a href="#main" class="ugras_a_tartalomhoz">Ugrás a tartalomhoz</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/death-star.png" alt="Halálcsillag logó." width="35" height="35"
+                        class="d-inline-block align-text-center" />
+                    Birodalmi Akadémia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Új Rend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about-us.html">Akadémia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="carrier.html">Karrier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://starwars.fandom.com/wiki/HoloNet"
+                                target="”_blank”">HoloNet</a>
+                        </li>
+                    </ul>
+
+                    <div class="gcse-search"></div>
+                    <button onclick="location.href='form.html'" class="btn btn-dark joinBtn"
+                        type="button">Csatlakozás</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-4">
+            <h1>Birodalmi rohamosztagos</h1>
+            <div class="row">
+                <div class="col-2 py-4 d-flex align-items-center justify-content-center">
+                    <img src="./img/darth-vader.png" alt="Darth Vader logó." width="50" height="50"
+                        class="d-inline-block align-text-center">
+                </div>
+                <div class="col-10 py-4">
+                    <p>A <strong>Birodalmi Akadémia</strong> a Birodalom legmagasabb szintű katonai oktatási intézménye, amely a galaxis
+                        legjobb katonáit készíti fel a Birodalom szolgálatára az alapkiképzéstől egészen a speciális
+                        kiképzésig és a szakmai továbbképzésig.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 py-5">
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped table-sm">
+                            <caption>
+                                <details>
+                                    <summary>Állások</summary>
+                                    <p class="kiegeszitoInfo">A táblázatban a jelenlegi üres pozíciók találhatók a rohamosztagosok számára.</p>
+                                </details>
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>Munkavégzés helye</th>
+                                    <th>Szakterület</th>
+                                    <th>Szerződés típusa</th>
+                                    <th>Napi munkaidő</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="table-light">
+                                    <td>Lothal</td>
+                                    <td>katonai</td>
+                                    <td>Határozatlan idejű</td>
+                                    <td>Teljes munkaidő</td>
+                                </tr>
+                                <tr>
+                                    <td>Tatouine</td>
+                                    <td>katonai</td>
+                                    <td>Határozott idejű</td>
+                                    <td>Teljes munkaidő</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>Ryloth</td>
+                                    <td>katonai</td>
+                                    <td>Határozatlan idejű</td>
+                                    <td>Teljes munkaidő</td>
+                                </tr>
+                                <tr>
+                                    <td>Mustafar</td>
+                                    <td>katonai</td>
+                                    <td>Határozott idejű</td>
+                                    <td>Teljes munkaidő</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 gx-5">
+                    <video class="video" poster="./video/thumbnail.png" width="420" controls>
+                        <source
+                            src="video/propaganda.mp4"
+                            type="video/mp4">
+                    </video>
+                    <p class="kiegeszitoInfo">A videóhoz tartozó <a href="./description.html">részletes leírást</a> itt találja!</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container py-3">
+            <h2>Feladatok</h2>
+            <ul>
+                <li>Harcolj a lázadók ellen és őrizd meg a Birodalom területeit!</li>
+                <li>Vezess missziókat, és hajts végre különleges küldetéseket!</li>
+                <li>Védd meg a Birodalom területeit az ellenséges támadásoktól!</li>
+                <li>Vegyél részt speciális katonai akciókban és műveletekben!</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="container py-3">
+            <h2>Kompetenciák</h2>
+            <ul>
+                <li>A Galaktikus Birodalom elit csapatába tartozhatsz!</li>
+                <li>Legyél hűséges és elkötelezett a Birodalom iránt!</li>
+                <li>A modern hadviseléhez nélkülözhetetlen technológiai ismeretek.</li>
+                <li>Remek lövési képességek.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid sticky-bottom">
+            <div class="row" id="footer">
+                <div class="col">
+                    <h3 class="content">Támogasd a Birodalmat!</h3>
+                    <div class="content">
+                        Építs hajókat, termelj kybert a birodalmi haditengerészet igényeinek
+                        kiszolgálása érdekében
+                    </div>
+                    <div class="content">
+                        <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
+                        Információs Minisztérium
+                    </div>
+                    <div class="content">© 3 BBY Galaktikus Birodalom</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script async src="https://cse.google.com/cse.js?cx=438ab7c17e1ef4d06"></script>
+</body>
+
+</html>

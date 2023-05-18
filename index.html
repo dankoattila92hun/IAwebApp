@@ -6,21 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="print.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Birodalmi Akadémia</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <title>Birodalmi Akadémia - Kezdőlap</title>
 </head>
 
 <body>
-  
-    <nav class="navbar navbar-expand-sm sticky-top" id="navbar">
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <div class="container-fluid">
+        <a href="#main" class="ugras_a_tartalomhoz">Ugrás a tartalomhoz</a>
         <a class="navbar-brand" href="index.html">
-          <img src="img/death-star.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-center" />
+          <img src="img/death-star.png" alt="Halálcsillag logó." width="35" height="35" class="d-inline-block align-text-center" />
           Birodalmi Akadémia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,13 +45,14 @@
                 target="”_blank”">HoloNet</a>
             </li>
           </ul>
-
           <div class="gcse-search"></div>
-          <button onclick="location.href='form.html'" class="btn btn-dark" type="button">Csatlakozás</button>
+          <button onclick="location.href='form.html'" class="btn btn-dark joinBtn" type="button">Csatlakozás</button>
         </div>
       </div>
     </nav>
-  
+  </header>
+
+  <main>
     <div class="container">
       <div class="row">
         <div class="col d-inline-block py-2" id="carousel">
@@ -64,13 +68,13 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/336382133_6006897719365606_1689744260876239166_n.jpg" class="d-block w-100 carouselImg"
-                  alt="carousel-img-first" />
+                  alt="TIE vadász gyártó üzem promóció. A Lothali vadászgép gyártó üzemet hivatott népszerűsíteni." />
               </div>
               <div class="carousel-item">
-                <img src="img/Enlist_Today.jpg" class="d-block w-100 carouselImg" alt="carousel-img-second" />
+                <img src="img/Enlist_Today.jpg" class="d-block w-100 carouselImg" alt="Toborzási plakát rajta Darth Vaderrel, 'Egyedül nem képes rá.' felirattal."/>
               </div>
               <div class="carousel-item">
-                <img src="img/RebelsAreTerrorists.webp" class="d-block w-100 carouselImg" alt="carousel-img-third" />
+                <img src="img/RebelsAreTerrorists.webp" class="d-block w-100 carouselImg" alt="Egy erős propaganda üzenet. A 'Lázadók terroristák!' felirattal." />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -87,12 +91,12 @@
         </div>
       </div>
     </div>
-
-    <div class="container-sm py-2">
+    
+    <div class="container py-2">
       <div class="row" id="tape">
         <div class="col">
           <div class="d-flex justify-content-center my-2">
-            <img src="img/icons8-empire-32.png" alt="empireLogo" />
+            <img src="img/icons8-empire-32.png" alt="Birodalmi logó." />
           </div>
           <h1 class="display-md-3 display-sm-2 d-flex justify-content-center fw-bold content">
             Szereted a hazádat?
@@ -110,6 +114,7 @@
       <div class="row">
         <div class="col">
           <div class="accordion" id="accordionPanelsStayOpenExample">
+            <section>
             <div class="accordion-item p-2">
               <h2 class="accordion-header">
                 <button class="accordion-button text-bg-dark p-3" type="button" data-bs-toggle="collapse"
@@ -120,17 +125,19 @@
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                  <div class="card">
+                  <div class="card accContent">
                     <div class="card-body">
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-md-5 col-sm-12 joinPictureCol">
-                            <img src="img/336377517_162991123277450_3462041039879870260_n.jpg"
-                              class="img-fluid rounded-start join" alt="join" />
-                          </div>
+                            <a href="img/336377517_162991123277450_3462041039879870260_n.jpg" target="”_blank”">
+                              <img src="img/elokep_1.jpg"
+                              class="img-fluid rounded-start join" alt="Toborzási plakát az alábbi felirattal. 'Semmi sem múlja felül az akadémiai képzést. Tartozz a legjobbakhoz. Jelentkezz most!'">
+                            </a>
+                            </div>
                           <div class="col-md-7 col-sm-12 gy-5">
                             <h3 class="content">
-                              <strong>Tartozz a legjobbakhoz!</strong>
+                              Tartozz a legjobbakhoz!
                             </h3>
                             <a href="form.html">Jelentkezz még ma!</a>
                             <p class="content">
@@ -141,7 +148,7 @@
                               megvédelmezhette volna a Galaxist!
                             </p>
                             <p class="content">
-                              A Birodalom fegyveres erőit önkéntes polgárok
+                              A <strong>Birodalom</strong> fegyveres erőit önkéntes polgárok
                               alkotják a klónkatonák helyett. A zászlók,
                               hagyományok, jelképek helyére a rohamosztagosok
                               uniformitása kerül.
@@ -154,32 +161,34 @@
                 </div>
               </div>
             </div>
+          </section>
+          <section>
             <div class="accordion-item p-2">
               <h2 class="accordion-header">
-                <button class="accordion-button text-bg-dark p-3" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                <button class="accordion-button collapsed text-bg-dark p-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo">
                   Kinevezések
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <div class="card">
+                  <div class="card accContent">
                     <div class="card-body">
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-md-5 col-sm-12 joinPictureCol">
-                            <img src="img/Gilad-Pellaeon.webp" class="img-fluid rounded-start join" alt="join"/>
+                            <img src="img/Gilad-Pellaeon.webp" class="img-fluid rounded-start join" alt="Gilad Pellaeon kapitány portréja">
                           </div>
                           <div class="col-md-7 col-sm-12 gy-5">
                             <h3 class="content">
-                              <strong>Gilad Pellaeon kapitány veszi át az Árnyék
+                              Gilad Pellaeon kapitány veszi át az Árnyék
                                 Tanács irányítását Gideon Moff bukását
-                                követően</strong>
+                                követően
                             </h3>
                             <p class="content">
                               A Birodalom örököseként Thrawn főadmirális azonnal
-                              megbízta Pellaeon kapitányt az Árnyék Tanács
+                              megbízta <a href="https://starwars.fandom.com/wiki/Gilad_Pellaeon/Legends">Gilad Pellaeon</a> kapitányt az Árnyék Tanács
                               vezetésével, hogy megőrizze a birodalmi értékeket
                               és megszilárdítsa az igazi rendet. A
                               hatalomátvétel után Pellaeon továbbra is
@@ -214,11 +223,14 @@
                 </div>
               </div>
             </div>
+          </section>
           </div>
         </div>
       </div>
     </div>
-  
+  </main>
+
+  <footer>
     <div class="container-fluid sticky-bottom">
       <div class="row" id="footer">
         <div class="col">
@@ -228,14 +240,15 @@
             kiszolgálása érdekében
           </div>
           <div class="content">
-            <img src="img/icons8-empire-32.png" alt="empireLogo" />Birodalmi
+            <img src="img/icons8-empire-32.png" alt="Birodalmi logó." />Birodalmi
             Információs Minisztérium
           </div>
           <div class="content">© 3 BBY Galaktikus Birodalom</div>
         </div>
       </div>
     </div>
-  
+  </footer>
+
   <script src="app.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
